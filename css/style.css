@@ -1,0 +1,14 @@
+
+
+:root{
+    --cor_header:#0E3B43
+}
+
+header{
+    background-color: #0E3B43;
+    display: flex;
+}
+
+header img{
+    width: 200px;
+}
