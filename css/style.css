@@ -1,14 +1,66 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf) format("trutype");
+    
+}
 
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format("trutype");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root{
     --cor_header:#0E3B43
 }
 
 header{
-    background-color: #0E3B43;
+    background-color: var(--cor_header);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: white;
 }
 
 header img{
     width: 200px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin-right: 30px;
+}
+
+nav a{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+#h1_cont{
+
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 172px;
 }
