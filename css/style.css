@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Source Sans Pro";
-    src: url(css/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format("trutype");
+    src: url(css/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format("trutype"), url(css/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf) format(trutype);
 }
 
 
@@ -18,6 +18,10 @@
 :root{
     --cor_header:#0E3B43;
     --cor_footer:#0DBF5B;
+    --cor_veja-mais: #ff3b38;
+    --font_grande: 'Oswald', sans-serif;
+    --font_pequena: "Source Sans Pro", sans-serif;
+
 }
 
 body, html{
@@ -44,13 +48,13 @@ header div{
 }
 
 header div h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 80px;
+    font-family: var(--font_grande);
+    font-size: 50px;
     color: white;
 }
 
 header img{
-    width: 200px;
+    width: 150px;
 }
 
 nav ul{
@@ -63,7 +67,7 @@ nav li{
 }
 
 nav a{
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: var(--font_pequena);
     font-weight: 600;
     text-decoration: none;
     color: white;
@@ -79,34 +83,68 @@ nav a{
 #banner{
     display: block;
     margin: 5px auto;
+    max-width: 1280px;
+    width: 910px;
 }
 
 main{
     background-color: white;
-    width: 2400px;
+    width: 990px;
     margin-right: 30px;
+    padding: 10px;
 }
 
 aside{
     background-color: white;
+    padding: 10px;
 }
 
+h2{
+    font-family: var(--font_pequena);
+    margin-bottom: 10px;
+}
 .veja-mais{
     display: flex;
+    background-color: var(--cor_veja-mais);
+}
+
+.veja-mais div p{
+    font-family: var(--font_pequena);
+    font-weight: 200;
+    margin-bottom: 23px;
+}
+
+.veja-mais div a{
+    padding: 3px;
+    display: inline-block;
+    margin: 0 30px;
+    text-decoration: none;
+    color: black;
+    background-color: #04BFBF;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.veja-mais div a:hover{
+    background-color: black;
+    color: yellow;
 }
 
 #img-veja-mais{
-    width: 200px;
+    width: 170px;
+    margin-right: 5px;
 }
 
 #content{
     margin: 0 auto 150px;
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    max-width: 1280px;
+    width: 910px;
 }
 
 footer{
+    width: 100%;
     margin-top: auto;
     display: flex;
     background-color: var(--cor_footer);
@@ -114,4 +152,8 @@ footer{
 
 #criador{
     margin: 0 auto;
+}
+
+#criador p{
+    text-align: center;
 }
