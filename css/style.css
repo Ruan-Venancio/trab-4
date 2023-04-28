@@ -58,7 +58,7 @@ header img{
 }
 
 nav ul{
-    padding: 10px 10px;
+    
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     background-color: rgb(50, 54, 57);
     min-width: 679px;
@@ -66,8 +66,8 @@ nav ul{
     list-style: none;
 }
 
-nav li{
-    margin-right: 30px;
+.items{
+    padding: 10px 15px;
 }
 
 nav a{
@@ -76,7 +76,12 @@ nav a{
     text-decoration: none;
     color: white;
 }
-
+.items{
+    transition: 10s;
+}
+.items:hover{
+    background-color: red;
+}
 
 #h1_cont{
 
