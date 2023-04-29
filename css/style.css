@@ -103,6 +103,7 @@ main{
     background-color: white;
     min-width: 380px;
     width: 85%;
+    height: fit-content;
     margin-right: 30px;
     padding: 10px;
 }
@@ -110,6 +111,7 @@ main{
 aside{
     min-width: 100px;
     width: 500px;
+    height: fit-content;
     background-color: white;
     padding: 10px;
 }
@@ -118,11 +120,18 @@ h2{
     margin-bottom: 10px;
 }
 
+.space{
+    margin-bottom:  30px;
+}
+.itens_cont{
+    padding: 0 10px;
+}
 .veja-mais{
     min-width: 100px;
     width: 100%;
     display: flex;
     background-color: var(--cor_veja-mais);
+    margin-bottom: 20px;
 }
 
 .veja-mais div p{  
@@ -135,6 +144,10 @@ h2{
 
 .font_p{
     font-family: var(--font_pequena);
+}
+
+.cont_veja-mais{
+    padding: 8px 0;
 }
 
 .veja-mais div a{
@@ -153,7 +166,7 @@ h2{
     color: yellow;
 }
 
-#img-veja-mais{
+.img-veja-mais{
     width: 170px;
     margin-right: 5px;
 }

@@ -1,20 +1,25 @@
 function calculate() {
-    var height = document.getElementById("height").value / 100;
-    var weight = document.getElementById("weight").value;
-  
-    var imc = weight / height ** 2;
-    var text=""
+    var altura = document.getElementById("Altura").value;
+    var peso = document.getElementById("Peso").value;
+    var imc = (peso / altura ** 2).toFixed(2);
+    var text="";
+    var image_imc="";
     if (imc < 18.5) {
-      text="Você está magro"
+      text="abaixo do peso";
+      image_imc="../images/abaixo_do_peso.png";
     } else if (imc < 24.9) {
-      text="Você está normal"
+      text="peso ideal";
+      image_imc="../images/peso_ideal.png";
     } else if (imc < 29.9) {
-      text="Você está com sobrepeso"
-    } else if (imc < 39.9) {
-      text="Você está com obesidade"
-    } else if (imc > 39.9) {
-      text="Você está com obesidade mórbida"
+      text="acima do peso";
+      image_imc="../images/acima_do_peso.png";
+    } else if (imc < 34.9) {
+      text="obesidade grau 1";
+      image_imc="../images/obesidade_grau_1.png";
+    } else if (imc > 34.9) {
+      text="obesidade grau 2";
+      image_imc="../images/obesidade_grau_2.png";
     }
-    document.getElementById("text_area").innerText=text
-  }
-  Footer
+    document.getElementById("res").innerText="Seu imc: " + imc + " - " + text;
+    document.getElementById("image_imc").src = image_imc;
+}
