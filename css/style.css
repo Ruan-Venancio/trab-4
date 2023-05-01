@@ -115,17 +115,21 @@ aside{
     background-color: white;
     padding: 10px;
 }
-
-h2{
-    margin-bottom: 10px;
-}
-
 .space{
     margin-bottom:  30px;
 }
+.text_cont{
+    line-height: 25px;
+}
+
+.text_extra{
+    line-height: 22px;
+}
+
 .itens_cont{
     padding: 0 10px;
 }
+
 .veja-mais{
     min-width: 100px;
     width: 100%;
